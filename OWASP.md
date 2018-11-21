@@ -1,10 +1,10 @@
 # OWASP（The Open Web Application Security Project ，開放網站應用程式安全專案）
-...
+
 https://www.owasp.org/index.php/Main_Page
 
  OWASP是一個開放社群的非營利組織，致力於改善網站應用程式的安全性。
  OWASP Top 10揭露常見的網站應用程式弱點，以供軟體開發安全參考。
- ...
+ 
  # OWASP TOP10 
  
  A1 – Injection（注入攻擊）
@@ -17,3 +17,5 @@ https://www.owasp.org/index.php/Main_Page
  A8. Insecure Deserialization 不安全的反序列化漏洞
  A9. Using Components with Known Vulnerabilities 使用已知漏洞元件
  A10. Insuffcient Logging & Monitoring 記錄與監控不足
+ 21
+ 21
