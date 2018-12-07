@@ -25,5 +25,20 @@ A9. Using Components with Known Vulnerabilities 使用已知漏洞元件
 A10. Insuffcient Logging & Monitoring 記錄與監控不足    
 
 # A1  - 注射（注入攻擊）
-# 三種較常見的 SQL injection 攻擊手法：
+網站應用程式執行來自外部包括資料庫在內的惡意指令，SQL Injection與Command Injection等攻擊包括在內。  
+因為駭客必須猜測管理者所撰寫的方式，因此又稱  「駭客的填空遊戲」。  
 
+# 簡述駭客攻擊流程：  
+
+找出未保護變數，作為注入點  
+猜測完整Command並嘗試插入  
+推測欄位數、Table名稱、SQL版本等資訊  
+完整插入完成攻擊程序   
+# 防護建議：  
+
+使用Prepared Statements，例如Java PreparedStatement()，.NET SqlCommand(), OleDbCommand()，PHP PDO bindParam()  
+使用Stored Procedures  
+嚴密的檢查所有輸入值  
+使用過濾字串函數過濾非法的字元，例如mysql_real_escape_string、addslashes  
+控管錯誤訊息只有管理者可以閱讀  
+控管資料庫及網站使用者帳號權限為何  
